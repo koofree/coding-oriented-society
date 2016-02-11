@@ -1,0 +1,97 @@
+{
+ "kind": "youtube#videoListResponse",
+ "etag": "\"oqbvhYxBE6fAbRk6m7aLlHf5s1I/5Gf_Ci_7GaDqhvNn0AivujV9EtQ\"",
+ "pageInfo": {
+  "totalResults": 1,
+  "resultsPerPage": 1
+ },
+ "items": [
+  {
+   "kind": "youtube#video",
+   "etag": "\"oqbvhYxBE6fAbRk6m7aLlHf5s1I/9cWRoZZz3P1YJWQHFS-0DK6skD0\"",
+   "id": "cZPYWcAg86Q",
+   "snippet": {
+    "publishedAt": "2014-12-08T14:59:52.000Z",
+    "channelId": "UCzw-C7fNfs018R1FzIKnlaA",
+    "title": "GD X TAEYANG - 'GOOD BOY' DANCE PRACTICE VIDEO",
+    "description": "GD X TAEYANG - GOOD BOY M/V @ https://youtu.be/1ZRb1we80kM\n\nDownload on iTunes @ http://smarturl.it/GDXTAEYANG_GOODBOY\n\n#GDXTAEYANG #GDRAGON #TAEYANG\n#GOODBOY #굿보이\n\nMore about BIGBANG @\nhttp://ygbigbang.com/\nhttp://www.facebook.com/bigbang\nhttp://www.youtube.com/BIGBANG\nhttp://iTunes.com/BIGBANG\nhttp://sptfy.com/BIGBANG\nhttp://weibo.com/bigbangasia\nhttp://twitter.com/ygent_official",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/cZPYWcAg86Q/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/cZPYWcAg86Q/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/cZPYWcAg86Q/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/cZPYWcAg86Q/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/cZPYWcAg86Q/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "BIGBANG",
+    "tags": [
+     "지드래곤",
+     "태양",
+     "지디",
+     "지디태양",
+     "굿보이",
+     "GDRAGON",
+     "TAEYANG",
+     "G-DRAGON",
+     "GD TAEYANG",
+     "GDXTAEYANG",
+     "GOODBOY",
+     "GD TAEYANG GOODBOY",
+     "GOOD BOY DANCE PRACTICE VIDEO",
+     "GOOD BOY DANCE"
+    ],
+    "categoryId": "10",
+    "liveBroadcastContent": "none",
+    "localized": {
+     "title": "GD X TAEYANG - 'GOOD BOY' DANCE PRACTICE VIDEO",
+     "description": "GD X TAEYANG - GOOD BOY M/V @ https://youtu.be/1ZRb1we80kM\n\nDownload on iTunes @ http://smarturl.it/GDXTAEYANG_GOODBOY\n\n#GDXTAEYANG #GDRAGON #TAEYANG\n#GOODBOY #굿보이\n\nMore about BIGBANG @\nhttp://ygbigbang.com/\nhttp://www.facebook.com/bigbang\nhttp://www.youtube.com/BIGBANG\nhttp://iTunes.com/BIGBANG\nhttp://sptfy.com/BIGBANG\nhttp://weibo.com/bigbangasia\nhttp://twitter.com/ygent_official"
+    }
+   },
+   "contentDetails": {
+    "duration": "PT4M6S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": true,
+    "regionRestriction": {
+     "blocked": [
+      "DE"
+     ]
+    }
+   },
+   "status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "public",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true
+   },
+   "statistics": {
+    "viewCount": "21006655",
+    "likeCount": "178038",
+    "dislikeCount": "2732",
+    "favoriteCount": "0",
+    "commentCount": "5803"
+   }
+  }
+ ]
+}

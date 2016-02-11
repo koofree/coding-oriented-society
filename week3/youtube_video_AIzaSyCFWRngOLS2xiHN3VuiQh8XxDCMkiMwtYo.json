@@ -1,0 +1,106 @@
+{
+ "kind": "youtube#videoListResponse",
+ "etag": "\"kuL0kDMAqRo3pU7O0pwlO-Lfzp4/FdetoE3N4yyZwynSknKjqn0E2Sg\"",
+ "pageInfo": {
+  "totalResults": 1,
+  "resultsPerPage": 1
+ },
+ "items": [
+  {
+   "kind": "youtube#video",
+   "etag": "\"kuL0kDMAqRo3pU7O0pwlO-Lfzp4/UUXcbg2YbN2KHh3F4oNN0e9Rvao\"",
+   "id": "2GRP1rkE4O0",
+   "snippet": {
+    "publishedAt": "2012-02-21T15:00:31.000Z",
+    "channelId": "UCzw-C7fNfs018R1FzIKnlaA",
+    "title": "BIGBANG - BLUE M/V",
+    "description": "5TH MINI ALBUM [ALIVE] \n\nAvailable on iTunes @ http://smarturl.it/BigbangAlive\n\n#BIGBANG #빅뱅 #BLUE #ALIVE\n\nMore about BIGBANG @\nhttp://ygbigbang.com/\nhttp://www.facebook.com/bigbang\nhttp://www.youtube.com/BIGBANG\nhttp://iTunes.com/BIGBANG\nhttp://sptfy.com/BIGBANG\nhttp://weibo.com/bigbangasia\nhttp://twitter.com/ygent_official",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/2GRP1rkE4O0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/2GRP1rkE4O0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/2GRP1rkE4O0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/2GRP1rkE4O0/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/2GRP1rkE4O0/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "BIGBANG",
+    "tags": [
+     "BIGBANG",
+     "TOP",
+     "G-DRAGON",
+     "TAEYANG",
+     "SEUNGRI",
+     "DAESUNG",
+     "빅뱅",
+     "탑",
+     "지드래곤",
+     "태양",
+     "대성",
+     "승리",
+     "KPOP",
+     "KOREAN SINGER",
+     "ASIAN WAVE",
+     "ビッグバン",
+     "BIGBANG IS BACK",
+     "BLUE",
+     "블루",
+     "티저",
+     "TEASER",
+     "COMEBACK",
+     "컴백",
+     "네이버",
+     "Naver",
+     "Alive",
+     "5th Mini Album",
+     "빅뱅 미니 5집"
+    ],
+    "categoryId": "10",
+    "liveBroadcastContent": "none",
+    "localized": {
+     "title": "BIGBANG - BLUE M/V",
+     "description": "5TH MINI ALBUM [ALIVE] \n\nAvailable on iTunes @ http://smarturl.it/BigbangAlive\n\n#BIGBANG #빅뱅 #BLUE #ALIVE\n\nMore about BIGBANG @\nhttp://ygbigbang.com/\nhttp://www.facebook.com/bigbang\nhttp://www.youtube.com/BIGBANG\nhttp://iTunes.com/BIGBANG\nhttp://sptfy.com/BIGBANG\nhttp://weibo.com/bigbangasia\nhttp://twitter.com/ygent_official"
+    }
+   },
+   "contentDetails": {
+    "duration": "PT4M3S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": true
+   },
+   "status": {
+    "uploadStatus": "processed",
+    "privacyStatus": "public",
+    "license": "youtube",
+    "embeddable": true,
+    "publicStatsViewable": true
+   },
+   "statistics": {
+    "viewCount": "72860302",
+    "likeCount": "427694",
+    "dislikeCount": "11393",
+    "favoriteCount": "0",
+    "commentCount": "140228"
+   }
+  }
+ ]
+}
