@@ -1,22 +1,23 @@
-# coding=utf-8
-# !/usr/bin/python
+from __future__ import print_function
 
 from apiclient.discovery import build
-from apiclient.errors import HttpError
-from oauth2client.tools import argparser
+
+# coding=utf-8
+# !/usr/bin/python
 
 # Set DEVELOPER_KEY to the API key value from the APIs & auth > Registered apps
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-DEVELOPER_KEY = "AIzaSyB8ioWdPCrqV1YlI6UTe_Sw3ATeFL7vMGc"
+DEVELOPER_KEY = ""
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
+
 
 def youtube_comment(video_id, next_page_token=None):
     youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
                     developerKey=DEVELOPER_KEY)
-    if next_page_token :
+    if next_page_token:
         results = youtube.commentThreads().list(
             part="snippet",
             videoId=video_id,
@@ -37,7 +38,7 @@ def youtube_comment(video_id, next_page_token=None):
         author = comment["snippet"]["authorDisplayName"]
         text = comment["snippet"]["textDisplay"]
         date = comment["snippet"]["publishedAt"]
-        print "[%s] Comment by %s: %s" % (date, author, text)
+        print("[%s] Comment by %s: %s" % (date, author, text))
 
     return results["nextPageToken"]
 

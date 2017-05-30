@@ -1,11 +1,13 @@
 __author__ = 'Koo Lee'
+from __future__ import print_function
+
+import json
 
 import mechanize
-import json
 from bs4 import BeautifulSoup
-from sets import Set
+from pymongo import ASCENDING
 from pymongo import MongoClient
-from pymongo import ASCENDING, DESCENDING
+from sets import Set
 
 
 def initialize_mongodb(database_uri):
@@ -101,7 +103,7 @@ def finding_youtube(url):
 
     # youtube.update({'_id': data['_id']}, data, True)
 
-    print data
+    print(data)
 
 
 finding_urls()

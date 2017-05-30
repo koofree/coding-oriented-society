@@ -1,22 +1,18 @@
 # coding= utf-8
-import mechanize
-import json
+import mechanicalsoup as mechanize
 from bs4 import BeautifulSoup
 
 br = mechanize.Browser()
-br.set_handle_robots(False)
 
-list_url = 'http://www.polygon.com/videos'
+list_url = 'https://www.polygon.com/videos'
 
-res = br.open(list_url) # request url
-html = res.read() # html
-soup = BeautifulSoup(html, 'html.parser') # soup
-a_tags = soup.find_all('a') # finding a tags
+res = br.get(list_url)  # request url
+a_tags = res.soup.find_all('a')  # finding a tags
 
 links = []
 for a_tag in a_tags:
     url = a_tag.attrs.get('href')
-    if not url: # url 이 비어있는 주소라면
+    if not url:  # url 이 비어있는 주소라면
         continue
 
     if not 'http://www.polygon.com/' in url:
@@ -24,8 +20,8 @@ for a_tag in a_tags:
         continue
 
     length = len('http://www.polygon.com/')
-    year = url[length:length+4]
-    
+    year = url[length:length + 4]
+
     if not year.isdigit():
         continue
     #
@@ -43,7 +39,7 @@ for link in links:
     ####################################################
     # Generate url address for crawling
     entire_url = link
-    res = br.open(entire_url)
+    res = br.get(entire_url)
     html = res.read()
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -74,7 +70,7 @@ for link in links:
 
     youtube_ids.append(youtube_id)
 
-print 'Count of youtube ids is %s' % len(youtube_ids)
+print('Count of youtube ids is %s' % len(youtube_ids))
 
 import requests
 
@@ -82,18 +78,18 @@ video_ids = youtube_ids
 statistics_list = []
 
 for video_id in video_ids:
-    api_key = 'AIzaSyB8ioWdPCrqV1YlI6UTe_Sw3ATeFL7vMGc'
-    url = 'https://www.googleapis.com/youtube/v3/videos?id=%s&key=%s&part=snippet,contentDetails,statistics,status' % (video_id, api_key)
+    api_key = ''
+    url = 'https://www.googleapis.com/youtube/v3/videos?id=%s&key=%s&part=snippet,contentDetails,statistics,status' % (
+        video_id, api_key)
 
     response = requests.get(url)
     json = response.json()
 
     statistics = json['items'][0]['statistics']
     statistics['videoId'] = video_id
-# 이거 만으로는 어떤 비디오 데이터 인지 몰라 그래서 video id 추가해 준거 statistics['videoId'] = video_id
+    # 이거 만으로는 어떤 비디오 데이터 인지 몰라 그래서 video id 추가해 준거 statistics['videoId'] = video_id
 
     statistics_list.append(statistics)
-
 
 import csv
 
@@ -105,4 +101,4 @@ with open(filename, 'wb') as file:
     for statistics in statistics_list:
         writer.writerow(statistics)
 
-print 'Save file finished!'
+print('Save file finished!')

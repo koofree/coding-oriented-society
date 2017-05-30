@@ -1,9 +1,11 @@
+from __future__ import print_function
+
 import mechanize
 import json
 from bs4 import BeautifulSoup
 
 br = mechanize.Browser()
-br.set_handle_robots(False) # ignore crawler setting information
+br.set_handle_robots(False)  # ignore crawler setting information
 
 ####################################################
 # Generate url address for crawling
@@ -24,7 +26,7 @@ for meta in soup.head.findAll('meta'):
     if meta_name == 'author':
         author = meta.attrs.get('content')
 
-print soup.find(id='comments')
+print(soup.find(id='comments'))
 
 ####################################################
 # Finding youtube video ids
@@ -36,16 +38,15 @@ for iframe in soup.findAll('iframe'):
     if 'youtube' in src_string:
         youtube_string = src_string
 
-print youtube_string
-print youtube_string[30:41]
+print(youtube_string)
+print(youtube_string[30:41])
 start = youtube_string.rfind('/') + 1
 end = youtube_string.rfind('?')
 
 if end is '-1':
-    print youtube_string[start:]
+    print(youtube_string[start:])
 else:
-    print youtube_string[start:end]
-
+    print(youtube_string[start:end])
 
 ####################################################
 entry__title = soup.find(class_='m-entry__title')

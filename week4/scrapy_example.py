@@ -1,8 +1,10 @@
+from __future__ import print_function
 # coding=utf-8
 # examples using scrapy
 
 
 import scrapy
+
 
 class BlogSpider(scrapy.Spider):
     name = 'blogspider'
@@ -15,6 +17,3 @@ class BlogSpider(scrapy.Spider):
     def parse_titles(self, response):
         for post_title in response.css('div.entries > ul > li a::text').extract():
             yield {'title': post_title}
-
-
-

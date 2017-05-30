@@ -1,15 +1,16 @@
-# coding=utf-8
-#!/usr/bin/python
+from __future__ import print_function
 
 from apiclient.discovery import build
 from apiclient.errors import HttpError
-from oauth2client.tools import argparser
+
+# coding=utf-8
+# !/usr/bin/python
 
 # Set DEVELOPER_KEY to the API key value from the APIs & auth > Registered apps
 # tab of
 #   https://cloud.google.com/console
 # Please ensure that you have enabled the YouTube Data API for your project.
-DEVELOPER_KEY = "AIzaSyB8ioWdPCrqV1YlI6UTe_Sw3ATeFL7vMGc"
+DEVELOPER_KEY = ""
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
 
@@ -21,10 +22,10 @@ def youtube_search(query, max_results):
     # Call the search.list method to retrieve results matching the specified
     # query term.
     search_response = youtube.search().list(
-            q=query,
-            part="id,snippet",
-            type="channel",
-            maxResults=max_results
+        q=query,
+        part="id,snippet",
+        type="channel",
+        maxResults=max_results
     ).execute()
 
     videos = []
@@ -44,13 +45,14 @@ def youtube_search(query, max_results):
             playlists.append("%s (%s)" % (search_result["snippet"]["title"],
                                           search_result["id"]["playlistId"]))
 
-    print "Videos:\n", "\n".join(videos), "\n"
-    print "Channels:\n", "\n".join(channels), "\n"
-    print "Playlists:\n", "\n".join(playlists), "\n"
+    print("Videos:\n", "\n".join(videos), "\n")
+    print("Channels:\n", "\n".join(channels), "\n")
+    print("Playlists:\n", "\n".join(playlists), "\n")
 
-queries = ['화장','메이크업','음악']
+
+queries = ['화장', '메이크업', '음악']
 for query in queries:
     try:
         youtube_search(query, 30)
-    except HttpError, e:
-        print "An HTTP error %d occurred:\n%s" % (e.resp.status, e.content)
+    except HttpError as e:
+        print("An HTTP error %d occurred:\n%s" % (e.resp.status, e.content))

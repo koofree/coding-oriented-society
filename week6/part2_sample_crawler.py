@@ -3,7 +3,7 @@ import json
 from bs4 import BeautifulSoup
 
 br = mechanize.Browser()
-br.set_handle_robots(False) # ignore crawler setting information
+br.set_handle_robots(False)  # ignore crawler setting information
 
 ####################################################
 # Generate url address for crawling
@@ -31,4 +31,4 @@ if end is '-1':
 else:
     youtube_id = youtube_string[start:end]
 
-print youtube_id
+print(youtube_id)
