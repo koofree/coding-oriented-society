@@ -65,7 +65,7 @@ def finding_youtube_id(link_url):
 
 
 def youtube_statistics(youtube_id):
-    api_key = 'AIzaSyB8ioWdPCrqV1YlI6UTe_Sw3ATeFL7vMGc'
+    api_key = ''
     url = 'https://www.googleapis.com/youtube/v3/videos?id=%s&key=%s&part=snippet,contentDetails,statistics,status' \
           % (youtube_id, api_key)
 
