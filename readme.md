@@ -28,3 +28,12 @@
 - 6th Week : 분석 알고리즘 설계하기
 - 7th Week : 분석 알고리즘 구현하기
 - 8th Week : 분석 결과 실제 서비스에 적용하기
+
+
+## 사수 소개
+- 이용구
+- 바로풀기, 스위즐랩스 창업맴버
+- 데이터, 인공지능분야 박사과정 수료 
+- Java, Python 개발자
+- [사수 블로그 링크](https://kuleeblog.wordpress.com)
+- 이메일 : koo@getswizzle.com
