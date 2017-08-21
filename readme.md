@@ -30,6 +30,16 @@
 
 PS. 참석 지원은 저에게 메시지 남겨주시거나 koo@getswizzle.com 메일로 신청해주시기 바랍니다.
 
+### 머신러닝 인사이드 커리큘럼
+
+- Install scikit-learn : scikit learn 설치하기
+- Training Data and Test Data : 학습 데이터와 데스트 데이터
+- What is the Model? : 모델이란?
+- What is the Regression? : 회귀란?
+- Definitions of mean, variance, arg-max, likelihood, etc... : 각종 용어들 학습하기
+- Drawing scatter plot : 스케터 플롯 그리기
+- Implementing simple classification model : 간단한 분류 모델 구현하기
+
 ## 파이썬 오픈스터디 (데이터 수집 분석 기초)
 - 1st Week : 개발 툴 설치 및 Python으로 프로그램 돌려보기
 - 2nd Week : Python으로 데이터 구조 및 로직 만들기 & Python으로 파일 입출력 구현하기
